@@ -1,0 +1,22 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developers.zenhub.com/graphql-api-docs/rate-limiting/index.html
+sources:
+- https://developers.zenhub.com/graphql-api-docs/rate-limiting/index.html
+name: ZenHub rate limits
+limits:
+- name: Processing Time
+  limit_text: For each Personal API Key you have, you are granted 90 seconds of processing time per minute.
+  max: 90
+  window: per minute
+  endpoint: GraphQL API
+- name: Concurrent Requests
+  limit_text: Every token can execute a maximum of 30 requests concurrently
+  max: 30
+  endpoint: GraphQL API
+headers:
+- X-RateLimit-Limit
+- X-RateLimit-Used
+- X-RateLimit-Remaining
+docs: https://developers.zenhub.com/graphql-api-docs/rate-limiting/index.html

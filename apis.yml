@@ -1,23 +1,114 @@
 aid: axiom-zen
+
 name: ZenHub
-description: 'ZenHub is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.zenhub.com/assets/webflow/66705b996a92992273ef8431_home-page-open-graph-image.jpg
+
+description: ZenHub provides advanced project management tools tightly integrated with GitHub, enabling teams to plan, track, and deliver software
+  efficiently. Features include hierarchical issue management, real-time reporting, AI‑assisted automation, and enterprise‑grade on‑premise deployments.
+  ZenHub serves developers, product managers, and engineering leaders across a wide range of industries, helping them streamline workflows directly
+  within GitHub.
+
 url: https://raw.githubusercontent.com/api-evangelist/axiom-zen/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Project Management
+- GitHub Integration
+- AI Automation
+- Enterprise
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: RateLimits
+  url: rate-limits/axiom-zen-rate-limits.yml
+- type: Plans
+  url: plans/axiom-zen-plans-pricing.yml
+- type: Webhooks
+  url: asyncapi/axiom-zen-webhooks.yml
+- type: ChangeLog
+  url: changelog/axiom-zen-changelog.yml
+- type: Conventions
+  url: conventions/axiom-zen-conventions.yml
+- type: Authentication
+  url: authentication/axiom-zen-authentication.yml
+- type: LLMsTxt
+  url: llms/axiom-zen-llms.txt
+- type: MCPServer
+  url: mcp/axiom-zen-mcp.yml
+- type: Hosts
+  url: hosts/axiom-zen-hosts.yml
+- type: Vendors
+  url: vendors/axiom-zen-vendors.yml
+- type: StatusPage
+  url: https://status.zenhub.com/
+- type: Newsroom
+  url: https://www.zenhub.com/press
+- type: ChangeLog
+  url: https://github.com/ZenHubHQ/zenhub-enterprise/releases
+- type: DomainSecurity
+  url: security/axiom-zen-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/axiom-zen_stock/
+  url: https://www.zenhub.com
+- type: Documentation
+  url: https://www.zenhub.com/developers
+- type: APIReference
+  url: https://developers.zenhub.com/graphql-api-docs/getting-started
+- type: GettingStarted
+  url: https://www.zenhub.com/getting-started
+- type: Support
+  url: https://help.zenhub.com/
+- type: Blog
+  url: https://www.zenhub.com/blog-posts
+- type: Pricing
+  url: https://www.zenhub.com/pricing
+- type: TermsOfService
+  url: https://www.zenhub.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.zenhub.com/privacy-policy
+
+apis:
+- name: ZenHub API
+  description: ZenHub API provides endpoints for managing issues, pipelines, and analytics within GitHub repositories.
+  humanURL: https://developers.zenhub.com/graphql-api-docs/getting-started
+  baseURL: null
+  aid: axiom-zen:zenhub-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-09-27'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://api.zenhub.com/mcp
+    status: null
+  - url: https://help.zenhub.com/mcp
+    status: 403
+  - url: https://forgeglobal.com/axiom-zen_stock/
+    status: 403
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 14
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

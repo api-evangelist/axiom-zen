@@ -1,0 +1,20 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developers.zenhub.com/webhooks/index.html
+sources:
+- https://developers.zenhub.com/webhooks/index.html
+description: ZenHub custom webhooks send a POST request in x-www-form-urlencoded format for several board events.
+events:
+- event: issue_transfer
+  description: Triggered when an issue is transferred between pipelines on a ZenHub board.
+- event: estimate_set
+  description: Triggered when an estimate is set on an issue.
+- event: estimate_cleared
+  description: Triggered when an estimate is cleared from an issue.
+- event: issue_reprioritized
+  description: Triggered when an issue is reprioritized (moved to a different position or pipeline) on a ZenHub board.
+delivery:
+  content_type: application/x-www-form-urlencoded
+note: The documentation does not specify any signature header, authentication method, or retry policy for webhook deliveries.
+docs: https://developers.zenhub.com/webhooks/index.html

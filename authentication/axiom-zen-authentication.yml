@@ -1,0 +1,19 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://support.zenhub.com/article/saml-re-authentication.md
+sources:
+- https://support.zenhub.com/article/saml-re-authentication.md
+- https://support.zenhub.com/article/how-do-i-set-up-my-zenhub-account-and-organization.md
+- https://developers.zenhub.com/graphql-api-docs/getting-started/index.html
+description: Authentication for Zenhub GraphQL API
+schemes:
+- type: http-bearer
+  name: Personal API Key
+  evidence: In order to use the GraphQL API, we need to be able to authenticate who is making the request. This is done via a Personal API Key
+    that's associated with your Zenhub account.
+  location: header
+  header: Authorization
+  how_to_obtain: Generate in the API section of your Zenhub Dashboard; copy the key value when shown.
+note: No OAuth flows, query parameters, or body credentials are documented.
+docs: https://support.zenhub.com/article/saml-re-authentication.md

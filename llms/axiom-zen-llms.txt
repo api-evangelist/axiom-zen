@@ -1,0 +1,140 @@
+# Zenhub Help Center
+
+Get help and support on all things Zenhub.
+
+## Articles
+
+- [What is Zenhub?](https://support.zenhub.com/article/what-is-zenhub.md): A project management platform built for development teams, connecting your GitHub repositories into one unified workspace. (author: Graeme, updated: 2026-06-22)
+- [Browser Extension](https://support.zenhub.com/article/how-do-i-use-zenhubs-browser-extension-for-git-hub.md): Install, navigate, and manage your projects directly within GitHub's interface using Zenhub's browser extension. (author: Graeme, updated: 2026-06-22)
+- [Zenhub Glossary](https://support.zenhub.com/article/zenhub-glossary.md): Complete reference guide to Zenhub terminology and key concepts. (author: Graeme, updated: 2026-06-22)
+
+## Getting Started
+
+- [Account Setup](https://support.zenhub.com/article/how-do-i-set-up-my-zenhub-account-and-organization.md): Step-by-step guide to creating your account, configuring your organization, and setting up your first workspace for team collaboration. (author: Graeme, updated: 2026-06-22)
+- [First Day Guide](https://support.zenhub.com/article/what-do-i-do-on-my-first-day-using-zenhub.md): Essential tasks and navigation tips to get productive quickly in your new Zenhub workspace. (author: Graeme, updated: 2026-06-22)
+
+## Working With Issues
+
+- [Creating Issues](https://support.zenhub.com/article/how-do-i-create-and-organize-issues.md): Create and organize GitHub and Zenhub issues, including comments, @mentions, labels, and metadata. (author: Graeme, updated: 2026-07-13)
+- [Issue Attachments](https://support.zenhub.com/article/what-can-i-attach-to-issues.md): Add files, images, videos, and embedded content from tools like Figma, Loom, and Notion to give your issues the context they need. (author: Graeme, updated: 2026-06-22)
+- [Work Tracker Basics](https://support.zenhub.com/article/how-do-i-manage-issues-on-the-work-tracker-board.md): Move issues, filter your board, and customize your view to keep your team's work organized and visible. (author: Graeme, updated: 2026-06-22)
+- [Pull Request Tracking](https://support.zenhub.com/article/how-do-i-track-pull-requests.md): Monitor PR status, reviews, and progress through your Zenhub workflow with automated connections and visual indicators. (author: Graeme, updated: 2026-06-22)
+- [GitHub Issue Sync](https://support.zenhub.com/article/git-hub-issue-sync.md): How Zenhub keeps your GitHub issues in sync using webhooks and a two-way data synchronization engine. (author: Ev, updated: 2026-06-22)
+- [Issue Dependencies](https://support.zenhub.com/article/how-do-i-create-issue-dependencies.md): Track blocking relationships between issues and pull requests to improve project visibility and prevent delays. (author: Graeme, updated: 2026-06-22)
+
+### Issue Types
+
+- [Establishing Issue Types](https://support.zenhub.com/article/establishing-issue-types.md): Configure your organizational issue hierarchy to structure work from strategic goals down to individual tasks. (author: Graeme, updated: 2026-06-22)
+- [Using Issue Types](https://support.zenhub.com/article/issue-types.md): Set and change issue types to organize work within your team's hierarchy. (author: Ev, updated: 2026-06-22)
+- [Issue Type Relationships](https://support.zenhub.com/article/parent-child-relationships.md): Connect issues through parent-child relationships within Zenhub's hierarchy. (author: Graeme, updated: 2026-06-22)
+
+## Planning & Reports
+
+- [Goals & Planning Panel](https://support.zenhub.com/article/goals-planning-panel-dh082oxq3uw6tu3zow6fbptq.md): Hierarchical tree view for organizing strategic work alongside your daily execution. (author: Graeme, updated: 2026-06-22)
+- [Timeline Planning](https://support.zenhub.com/article/timeline-planning.md): Visualize and manage your long-term projects with a gantt-style view that connects strategic planning to daily execution. (author: Graeme, updated: 2026-06-22)
+- [Story Points](https://support.zenhub.com/article/how-do-i-estimate-issues-with-story-points.md): Estimate issues with story points to improve sprint planning, velocity tracking, and automated sprint capacity management. (author: Graeme, updated: 2026-06-22)
+
+### My Work & Standup
+
+- [My Work](https://support.zenhub.com/article/my-work.md): Stay organized with a personalized dashboard showing your current assignments, recent activity, and blockers. (author: Graeme, updated: 2026-06-22)
+- [Daily Standup](https://support.zenhub.com/article/daily-standup.md): Coordinate team activities with a consolidated view of everyone's work, progress, and blockers. (author: Graeme, updated: 2026-06-22)
+
+### Timeline
+
+### Sprints and Estimates
+
+- [Sprint Management](https://support.zenhub.com/article/how-do-i-set-up-and-manage-sprints.md): Set up recurring sprint schedules, automate issue management, and configure capacity planning for your team. (author: Graeme, updated: 2026-06-22)
+
+### Reports
+
+- [Sprint Burndown](https://support.zenhub.com/article/sprint-burndown.md): Monitor your team's sprint progress in real time with visual burndown charts that show completed work, remaining effort, and deadline prediction. (author: Graeme, updated: 2026-06-22)
+- [Sprint Summary](https://support.zenhub.com/article/sprint-summary.md): Generate AI-powered sprint reviews that automatically summarize completed work, organize issues by theme, and create ready-to-use sprint demo agendas. (author: Graeme, updated: 2026-06-22)
+- [Team Velocity](https://support.zenhub.com/article/team-velocity.md): Understand how much work your team consistently delivers each sprint, with data-driven insights for planning and capacity management. (author: Graeme, updated: 2026-06-22)
+- [Release Burnup](https://support.zenhub.com/article/release-burnup.md): Track long-term project progress and forecast completion dates for multi-sprint initiatives. (author: Graeme, updated: 2026-06-22)
+- [GitHub Insights](https://support.zenhub.com/article/git-hub-insights.md): Track your team's development performance and get actionable recommendations for improvement. (author: Graeme, updated: 2026-06-22)
+- [Lead & Cycle Time](https://support.zenhub.com/article/lead-cycle-time.md): Monitor how long issues take from start to finish and identify workflow delays. (author: Graeme, updated: 2026-06-22)
+- [Bottleneck Tracking](https://support.zenhub.com/article/bottleneck-tracking.md): Visualize work accumulation across pipelines to spot workflow problems and process improvements. (author: Graeme, updated: 2026-06-22)
+- [Milestone Burndown](https://support.zenhub.com/article/milestone-burndown.md): Monitor milestone completion rates and remaining work to stay on track with project deadlines. (author: Graeme, updated: 2026-06-22)
+
+### Enterprise Reports
+
+## Workspaces
+
+- [Managing Workspaces](https://support.zenhub.com/article/how-do-i-create-and-manage-workspaces-in-zenhub.md): Create, customize, and manage Zenhub workspaces to organize repositories and coordinate work across your teams. (author: Graeme, updated: 2026-06-22)
+- [Customizing Your View](https://support.zenhub.com/article/customising-your-view-0vkdb8ykir8xaecngx80qjcw.md): Adjust the Work Tracker and Timeline to show exactly what your team needs, from condensed cards to timeline color schemes. (author: Graeme, updated: 2026-07-03)
+
+## Access Control
+
+- [Roles & Permissions Overview](https://support.zenhub.com/article/roles-and-permissions-overview.md): How Zenhub’s three layers of access work together: organization roles, workspace roles, and GitHub repository permissions. (author: Ev, updated: 2026-07-15)
+- [Organization Access](https://support.zenhub.com/article/organization-access.md): Organization Admin, Member, and Guest roles — seats, invites, visibility, and when to use Guest for stakeholders and consultants. (author: Ev, updated: 2026-07-15)
+- [Workspace Access](https://support.zenhub.com/article/workspace-access.md): Shared vs private workspaces, Admin / Editor / Viewer roles, and why organization Guests must remain Viewers. (author: Graeme, updated: 2026-07-15)
+- [GitHub Permissions](https://support.zenhub.com/article/git-hub-permissions.md): Set up GitHub permissions, organizational access, and authentication for team collaboration in Zenhub. (author: Graeme, updated: 2026-07-15)
+- [GitHub Issue Visibility](https://support.zenhub.com/article/git-hub-issue-visibility.md): Control repository issue access for workspace members without full GitHub permissions. (author: Ev, updated: 2026-07-15)
+
+## Automations
+
+- [Workflows](https://support.zenhub.com/article/workflows-automation.md): Automate issue movement between workspaces for team handoffs and cross-functional coordination. (author: Graeme, updated: 2026-06-22)
+- [Smart Pipelines](https://support.zenhub.com/article/smart-pipelines.md): Automate metadata updates, WIP limits, and issue management within your workspace. (author: Graeme, updated: 2026-06-22)
+
+## Account & Administration
+
+- [Billing & Subscriptions](https://support.zenhub.com/article/billing-subscriptions.md): Manage your Zenhub subscription, payment methods, user licenses, and administrative settings. (author: Graeme, updated: 2026-06-22)
+- [Deleting Your Account or Organization](https://support.zenhub.com/article/deleting-your-account-or-organization.md): How to delete an organization, leave an organization, or delete your Zenhub user account — including the 14-day recovery window and data retention. (author: Graeme, updated: 2026-09-25)
+
+## Integrations
+
+- [Slack Integration](https://support.zenhub.com/article/slack-integration.md): Create and comment on Zenhub issues directly in Slack, and receive real-time issue updates where your team already communicates. (author: Ev, updated: 2026-06-22)
+- [Notion Integration](https://support.zenhub.com/article/notion-integration.md): Embed Notion documents directly into Zenhub issues and comments to bring relevant context into your workflow. (author: Ev, updated: 2026-06-22)
+- [GitHub Projects Integration](https://support.zenhub.com/article/git-hub-projects-integration.md): Zenhub syncs with GitHub issues, sub-issues, milestones, issue types, comments, pull requests, and labels — but not with GitHub Projects data. (author: Ev, updated: 2026-06-22)
+
+## On Premise
+
+- [License Governance](https://support.zenhub.com/article/license-governance-in-zenhub-enterprise.md): Control user access and license distribution in Zenhub Enterprise with administrator oversight. (author: Ev, updated: 2026-06-22)
+- [Billing in Zenhub Enterprise](https://support.zenhub.com/article/billing-for-additional-licenses-in-zenhub-enterprise.md): Understand active user billing and how surcharges are calculated in Zenhub Enterprise. (author: Ev, updated: 2026-06-22)
+
+## Support & Troubleshooting
+
+- [Troubleshooting](https://support.zenhub.com/article/troubleshooting.md): Diagnose and fix the most common Zenhub issues, from browser conflicts and permissions to GitHub integration problems. (author: Graeme, updated: 2026-06-22)
+- [API Integration](https://support.zenhub.com/article/api-integration.md): Build custom applications and automate workflows using Zenhub's GraphQL API. (author: Graeme, updated: 2026-06-22)
+- [SAML Re-Authentication](https://support.zenhub.com/article/saml-re-authentication.md): Fix access problems when Zenhub requires SAML re-authentication to satisfy GitHub Enterprise security requirements. (author: Graeme, updated: 2026-06-22)
+- [Submit a Bug Report](https://support.zenhub.com/article/submit-a-bug-report.md): Report bugs, suggest features, or disclose security vulnerabilities to the Zenhub team. (author: Ev, updated: 2026-06-22)
+
+## Changelog
+
+- [Changelog History](https://support.zenhub.com/article/changelog-history.md): Index of all Zenhub product changelog announcements. (author: Ev, updated: 2026-09-08)
+- [[Sep 2026] Filter reports by issue type](https://support.zenhub.com/article/sep-2026-filter-reports-by-issue-type.md): Zenhub update: Filter Release Report, Lead/Cycle Time, and Team Velocity by GitHub and Zenhub issue types (September 2026) (author: Ev, updated: 2026-09-08)
+- [[Jul 2026] Organization Guest role](https://support.zenhub.com/article/jul-2026-organization-guest-role.md): Zenhub update: Organization Guest role for stakeholders and consultants (July 2026) (author: Ev, updated: 2026-07-14)
+- [[Jul 2026] Workspace roles and tighter access controls](https://support.zenhub.com/article/jul-2026-workspace-roles-and-access-controls.md): Zenhub update: Workspace roles (Admin, Editor, Viewer) and organization-level governance controls (July 2026) (author: Ev, updated: 2026-07-07)
+- [[Jun 2026] What's new in Zenhub in June](https://support.zenhub.com/article/jun-2026-whats-new-in-zenhub-in-april.md) (author: Graeme, updated: 2026-06-22)
+- [[Apr 2026] What's new in Zenhub in April](https://support.zenhub.com/article/apr-2026-whats-new-in-zenhub.md) (author: Ev, updated: 2026-04-30)
+- [[Nov 2025] Shared Saved Views and Workspace Defaults](https://support.zenhub.com/article/shared-saved-views-and-workspace-defaults.md): Zenhub update: Shared Saved Views and Workspace Defaults (November 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Sep 2025] What's new in Zenhub Fall 2025](https://support.zenhub.com/article/whats-new-in-zenhub-fall-2025.md): Zenhub update: What's new in Zenhub Fall 2025 (September 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Jul 2025] What's new in Zenhub in July](https://support.zenhub.com/article/whats-new-in-zenhub-in-july.md): Zenhub update: What's new in Zenhub in July (July 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Jun 2025] What's new in Zenhub in June](https://support.zenhub.com/article/whats-new-in-zenhub-in-june.md): Zenhub update: What's new in Zenhub in June (June 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[May 2025] Request for new GitHub permissions](https://support.zenhub.com/article/request-for-new-github-permissions.md): Zenhub update: Request for new GitHub permissions (May 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Apr 2025] Migration of Epics & Projects to Sub-issues](https://support.zenhub.com/article/migration-of-epics-and-projects-to-sub-issues.md): Zenhub update: Migration of Epics & Projects to Sub-issues (April 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Mar 2025] What's new in Zenhub in March](https://support.zenhub.com/article/whats-new-in-zenhub-in-march.md): Zenhub update: What's new in Zenhub in March (March 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Feb 2025] Drag and Drop in the Goals & Planning Panel & and Issue Type Update](https://support.zenhub.com/article/drag-and-drop-in-the-goals-and-planning-panel-and-and-issue-type-update.md): Zenhub update: Drag and Drop in the Goals & Planning Panel & and Issue Type Update (February 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Feb 2025] Goals & Planning Panel - hierarchy made easy (and fast!)](https://support.zenhub.com/article/goals-and-planning-panel-hierarchy-made-easy-and-fast.md): Zenhub update: Goals & Planning Panel - hierarchy made easy (and fast!) (February 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Feb 2025] A few more steps towards a cleaner future](https://support.zenhub.com/article/a-few-more-steps-towards-a-cleaner-future.md): Zenhub update: A few more steps towards a cleaner future (February 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Jan 2025] A Fresh Look for the New Year: Our New Issue Cards](https://support.zenhub.com/article/a-fresh-look-for-the-new-year-our-new-issue-cards.md): Zenhub update: A Fresh Look for the New Year: Our New Issue Cards (January 2025) (author: Zenhub Support, updated: 2026-04-30)
+- [[Dec 2024] Sub-issues & Issue Types!](https://support.zenhub.com/article/sub-issues-and-issue-types.md): Zenhub update: Sub-issues & Issue Types! (December 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Oct 2024] Shuffled Stand Ups](https://support.zenhub.com/article/shuffled-stand-ups.md): Zenhub update: Shuffled Stand Ups (October 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Sep 2024] Daily Feed, Project & Milestone Quality of Life Improvements](https://support.zenhub.com/article/daily-feed-project-and-milestone-quality-of-life-improvements.md): Zenhub update: Daily Feed, Project & Milestone Quality of Life Improvements (September 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Sep 2024] Performance & Stability Improvements](https://support.zenhub.com/article/performance-and-stability-improvements.md): Zenhub update: Performance & Stability Improvements (September 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Aug 2024] Zenhub Improvements in Q2 2024](https://support.zenhub.com/article/zenhub-improvements-in-q2-2024.md): Zenhub update: Zenhub Improvements in Q2 2024 (August 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Mar 2024] Roadmap: Exporting and Sharing Enhancements](https://support.zenhub.com/article/roadmap-exporting-and-sharing-enhancements.md): Zenhub update: Roadmap: Exporting and Sharing Enhancements (March 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Mar 2024] Zenhub AI Beta now available for everyone](https://support.zenhub.com/article/zenhub-ai-beta-now-available-for-everyone.md): Zenhub update: Zenhub AI Beta now available for everyone (March 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Mar 2024] Smart Pipelines: Issue Metadata Automation, Flag Stale Issues, WIP Limits](https://support.zenhub.com/article/smart-pipelines-issue-metadata-automation-flag-stale-issues-wip-limits.md): Zenhub update: Smart Pipelines: Issue Metadata Automation, Flag Stale Issues, WIP Limits (March 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Feb 2024] Advanced Velocity Breakdown by Assignees, Epics and Labels](https://support.zenhub.com/article/advanced-velocity-breakdown-by-assignees-epics-and-labels.md): Zenhub update: Advanced Velocity Breakdown by Assignees, Epics and Labels (February 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Feb 2024] Roadmap Improvements](https://support.zenhub.com/article/roadmap-improvements.md): Zenhub update: Roadmap Improvements (February 2024) (author: Zenhub Support, updated: 2026-04-30)
+- [[Dec 2023] Email notification for Zenhub Issues](https://support.zenhub.com/article/email-notification-for-zenhub-issues.md): Zenhub update: Email notification for Zenhub Issues (December 2023) (author: Zenhub Support, updated: 2026-04-30)
+- [[Dec 2023] WIP Limits for Pipelines](https://support.zenhub.com/article/wip-limits-for-pipelines.md): Zenhub update: WIP Limits for Pipelines (December 2023) (author: Zenhub Support, updated: 2026-04-30)
+- [[Nov 2023] Generate Acceptance Criteria using AI](https://support.zenhub.com/article/generate-acceptance-criteria-using-ai.md): Zenhub update: Generate Acceptance Criteria using AI (November 2023) (author: Zenhub Support, updated: 2026-04-30)
+- [[Jun 2023] AI Suggested Labels](https://support.zenhub.com/article/ai-suggested-labels.md): Zenhub update: AI Suggested Labels (June 2023) (author: Zenhub Support, updated: 2026-04-30)
+- [[Jun 2023] Saved Views](https://support.zenhub.com/article/saved-views.md): Zenhub update: Saved Views (June 2023) (author: Zenhub Support, updated: 2026-04-30)
+- [[Mar 2023] Zenhub Issues](https://support.zenhub.com/article/zenhub-issues.md): Zenhub update: Zenhub Issues (March 2023) (author: Zenhub Support, updated: 2026-04-30)
+- [[Feb 2023] February Updates](https://support.zenhub.com/article/february-updates.md): Zenhub update: February Updates (February 2023) (author: Zenhub Support, updated: 2026-04-30)
+- [[Jan 2023] Performance Improvements](https://support.zenhub.com/article/performance-improvements.md): Zenhub update: Performance Improvements (January 2023) (author: Zenhub Support, updated: 2026-04-30)
+- [[Dec 2022] Redeeming Invites at Onboarding](https://support.zenhub.com/article/redeeming-invites-at-onboarding.md): Zenhub update: Redeeming Invites at Onboarding (December 2022) (author: Zenhub Support, updated: 2026-04-30)
+

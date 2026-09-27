@@ -1,0 +1,30 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developers.zenhub.com/graphql-api-docs/pagination/index.html
+sources:
+- https://developers.zenhub.com/graphql-api-docs/pagination/index.html
+- https://support.zenhub.com/article/how-do-i-set-up-my-zenhub-account-and-organization.md
+- https://developers.zenhub.com/graphql-api-docs/getting-started/index.html
+- https://support.zenhub.com/article/saml-re-authentication.md
+idempotency:
+  coverage: none
+  evidence: The documentation does not describe any idempotency key or mechanism for write operations.
+pagination:
+  style: Relay cursor‑based
+  params:
+  - first
+  - after
+  - last
+  - before
+  - orderBy (optional)
+  response_fields:
+  - pageInfo.hasNextPage
+  - pageInfo.endCursor
+  - pageInfo.hasPreviousPage
+  - pageInfo.startCursor
+  evidence: Lists are paginated using first/after for forward pagination and last/before for reverse pagination; the first/last value must be
+    ≤ 100.
+error_envelope: Responses are JSON objects that may contain an "errors" field with a list of errors; a 200 status code does not guarantee success.
+authentication: Requests must include an "Authorization" header with the value "Bearer YOUR_PERSONAL_API_KEY".
+docs: https://developers.zenhub.com/graphql-api-docs/pagination/index.html

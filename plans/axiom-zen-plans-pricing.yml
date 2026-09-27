@@ -1,0 +1,26 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.zenhub.com/pricing
+sources:
+- https://www.zenhub.com/pricing
+- https://support.zenhub.com/article/billing-subscriptions.md
+- https://support.zenhub.com/article/billing-for-additional-licenses-in-zenhub-enterprise.md
+name: ZenHub pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Free
+  price_text: $0 per user /mo
+  price: 0
+  billing_period: monthly
+  description: Built for small teams, with essential features, and a single workspace.
+- name: Teams
+  price_text: $4.99 per user /mo Billed yearly
+  price: 4.99
+  billing_period: yearly
+  description: Designed for growing teams, with AI‑powered tools, automation, and real‑time reporting.
+- name: Enterprise
+  price_text: Contact sales
+  description: Built for large teams with AI automation, advanced security, custom reports, and dedicated support.
+docs: https://www.zenhub.com/pricing

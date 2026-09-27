@@ -1,0 +1,10 @@
+generated: 2026-09-27
+method: probed
+source: https://api.zenhub.com/mcp
+deployment:
+  mode: remote
+  endpoint: https://api.zenhub.com/mcp
+  install: ""
+  package: ""
+  auth: unknown
+  verified: probed
