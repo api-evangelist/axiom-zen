@@ -45,3 +45,62 @@ tool_quality:
   scored: false
   note: Facts from the saved tools/list capture (mcp_tool_quality.py); recorded, not scored. Checks learned
     from Glimind's agent-readiness audit.
+tools:
+- name: getWorkspacePipelinesAndRepositories
+  description: Get a list of all pipelines for the current workspace
+- name: getTeamMembers
+  description: Get a list team members in the workspace. This will include their zenhub user ids and github
+    usernames, if applicable. The viewer refers to the person who ran the command.
+- name: searchLatestIssues
+  description: Get the latest 20 issues from Zenhub. Can optionally pass a search query to filter the
+    results.
+- name: searchClosedIssues
+  description: Search closed issues in the workspace. Can optionally pass a search query and filters.
+- name: getIssuesInPipeline
+  description: Get a list of all issues in a specific pipeline. Useful for getting issues that are in
+    progress, in review, iceboxed, or needing triage. Provide all of the repository ids in the workspace.
+- name: getSprint
+  description: Get the issues, dates, and metadata for a sprint. If no sprintId is provided, returns the
+    active sprint. Issues with a CLOSED state are completed.
+- name: getUpcomingSprint
+  description: Get the issues, dates, and metadata for the next sprint in this workspace. Issues with
+    a CLOSED state are completed.
+- name: listRecentSprints
+  description: Get the last 10 open and last 10 closed sprints in the workspace, returning their name
+    and id.
+- name: createZenhubIssue
+  description: Create a new Zenhub issue. These are used to track work, and are especially useful for
+    tasks that aren't linked to GitHub. Zenhub issues can not have GitHub issues as their parents. repositoryId
+    should be the graphql id of the workspace's zenhubRepository.
+- name: createGitHubIssue
+  description: Create a new issue on GitHub. These are used to track work, generally for developer-focused
+    tasks. repositoryId should be the graphql id of one of the githubRepositories on the workspace. assignees
+    should be an array of github usernames (without the @)
+- name: addIssuesToSprints
+  description: Add issues to sprints
+- name: removeIssuesFromSprints
+  description: Remove issues from sprints
+- name: assignIssues
+  description: Assign one or GitHub issues to one or more people. assigneeIds should be github user ids
+- name: createBlockage
+  description: Create a blocking dependency relationship between two issues
+- name: setDatesForIssue
+  description: Set start and end dates for an issue. This should only be used for Epics, Projects, Initiatives,
+    or other high-level issue types. Dates should be provided in YYYY-MM-DD format, eg "2025-10-28". Use
+    getWorkspacePipelinesAndRepositories to get the zenhubOrganizationId. To clear dates, pass null for
+    both startDate and endDate
+- name: setParentForIssues
+  description: Create a sub-issue relationship between a parent and one or more child issues, using their
+    graphql issue ids
+- name: moveIssueToPipeline
+  description: Move an issue to a specific pipeline
+- name: setIssueEstimate
+  description: Set the estimate for an issue in story points or hours
+- name: getIssueTypes
+  description: Get all available issue types in the workspace.
+- name: setIssueType
+  description: Set the issue type for one or more issues.
+- name: updateIssue
+  description: Update an existing Zenhub or GitHub issue. Only provide the optional issue fields that
+    you need to change. To close an issue, set state to "CLOSED"
+tools_count: 21
