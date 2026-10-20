@@ -1,0 +1,532 @@
+{
+  "endpoint": "https://api.zenhub.com/mcp",
+  "captured": "2026-10-20",
+  "method": "initialize + tools/list (anonymous, no tool called; roadmap#992)",
+  "protocol_version": "2025-06-18",
+  "server_info": {
+    "name": "zenhub",
+    "version": "0.0.1"
+  },
+  "result": {
+    "tools": [
+      {
+        "name": "getWorkspacePipelinesAndRepositories",
+        "description": "Get a list of all pipelines for the current workspace",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "getTeamMembers",
+        "description": "Get a list team members in the workspace. This will include their zenhub user ids and github usernames, if applicable. The viewer refers to the person who ran the command.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "searchLatestIssues",
+        "description": "Get the latest 20 issues from Zenhub. Can optionally pass a search query to filter the results.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string"
+            }
+          }
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "searchClosedIssues",
+        "description": "Search closed issues in the workspace. Can optionally pass a search query and filters.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string"
+            },
+            "sprintIds": {
+              "description": "Filter by sprint IDs",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "getIssuesInPipeline",
+        "description": "Get a list of all issues in a specific pipeline. Useful for getting issues that are in progress, in review, iceboxed, or needing triage. Provide all of the repository ids in the workspace.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "pipelineId": {
+              "type": "string"
+            },
+            "repositoryIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "pipelineId",
+            "repositoryIds"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "getSprint",
+        "description": "Get the issues, dates, and metadata for a sprint. If no sprintId is provided, returns the active sprint. Issues with a CLOSED state are completed.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "sprintId": {
+              "description": "Sprint ID to fetch. If not provided, returns the active sprint.",
+              "type": "string"
+            }
+          }
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "getUpcomingSprint",
+        "description": "Get the issues, dates, and metadata for the next sprint in this workspace. Issues with a CLOSED state are completed.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "listRecentSprints",
+        "description": "Get the last 10 open and last 10 closed sprints in the workspace, returning their name and id.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "createZenhubIssue",
+        "description": "Create a new Zenhub issue. These are used to track work, and are especially useful for tasks that aren't linked to GitHub. Zenhub issues can not have GitHub issues as their parents. repositoryId should be the graphql id of the workspace's zenhubRepository.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "repositoryId": {
+              "type": "string"
+            },
+            "parentIssueId": {
+              "type": "string"
+            },
+            "issueTypeId": {
+              "type": "string"
+            },
+            "labels": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "assigneeIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "title",
+            "body",
+            "repositoryId"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "createGitHubIssue",
+        "description": "Create a new issue on GitHub. These are used to track work, generally for developer-focused tasks. repositoryId should be the graphql id of one of the githubRepositories on the workspace. assignees should be an array of github usernames (without the @)",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "repositoryId": {
+              "type": "string"
+            },
+            "parentIssueId": {
+              "type": "string"
+            },
+            "issueTypeId": {
+              "type": "string"
+            },
+            "labels": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "assignees": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "title",
+            "body",
+            "repositoryId"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "addIssuesToSprints",
+        "description": "Add issues to sprints",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "issueIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "sprintIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "issueIds",
+            "sprintIds"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "removeIssuesFromSprints",
+        "description": "Remove issues from sprints",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "issueIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "sprintIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "issueIds",
+            "sprintIds"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "assignIssues",
+        "description": "Assign one or GitHub issues to one or more people. assigneeIds should be github user ids",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "issueIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "assigneeIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "issueIds",
+            "assigneeIds"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "createBlockage",
+        "description": "Create a blocking dependency relationship between two issues",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "blockedIssueId": {
+              "type": "string"
+            },
+            "blockingIssueId": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "blockedIssueId",
+            "blockingIssueId"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "setDatesForIssue",
+        "description": "Set start and end dates for an issue. This should only be used for Epics, Projects, Initiatives, or other high-level issue types. Dates should be provided in YYYY-MM-DD format, eg \"2025-10-28\". Use getWorkspacePipelinesAndRepositories to get the zenhubOrganizationId. To clear dates, pass null for both startDate and endDate",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "issueId": {
+              "type": "string"
+            },
+            "startDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "endDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "zenhubOrganizationId": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "issueId",
+            "startDate",
+            "endDate",
+            "zenhubOrganizationId"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "setParentForIssues",
+        "description": "Create a sub-issue relationship between a parent and one or more child issues, using their graphql issue ids",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "parentIssueId": {
+              "type": "string"
+            },
+            "childIssueIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "parentIssueId",
+            "childIssueIds"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "moveIssueToPipeline",
+        "description": "Move an issue to a specific pipeline",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "issueId": {
+              "type": "string"
+            },
+            "pipelineId": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "issueId",
+            "pipelineId"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "setIssueEstimate",
+        "description": "Set the estimate for an issue in story points or hours",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "issueId": {
+              "type": "string"
+            },
+            "estimate": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "issueId",
+            "estimate"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "getIssueTypes",
+        "description": "Get all available issue types in the workspace.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "repositoryId": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "repositoryId"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "setIssueType",
+        "description": "Set the issue type for one or more issues.",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "issueIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "issueTypeId": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "issueIds",
+            "issueTypeId"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "updateIssue",
+        "description": "Update an existing Zenhub or GitHub issue. Only provide the optional issue fields that you need to change. To close an issue, set state to \"CLOSED\"",
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "issueId": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "issueId"
+          ]
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      }
+    ]
+  }
+}
